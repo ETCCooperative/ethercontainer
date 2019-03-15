@@ -15,8 +15,8 @@ def main():
     response = requests.post(
         url, data=json.dumps(payload), headers=headers).json()
 
-    if response["result"]:
-        return "", 200
+    print(response)
+    return "", 200
 
 if __name__ == "__main__":
     main()
